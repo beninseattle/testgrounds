@@ -4,7 +4,7 @@ on:
     branches:
       - main
     paths:
-      - assets/**
+      - dist/**
 jobs:
   sync:
     runs-on: ubuntu-latest
@@ -20,4 +20,4 @@ jobs:
         aws-region: us-west-2
     
     - name: Sync to S3
-      run: aws s3 sync ./assets s3://testgrounds-beninseattle
+      run: aws s3 sync ./dist s3://testgrounds-beninseattle
