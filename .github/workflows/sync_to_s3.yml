@@ -24,7 +24,7 @@ jobs:
         node-version: '20'
 
     - name: Install dependencies
-      run: npm install
+      run: npm install && npm i -g vite
 
     - name: Build app
       run: tsc -b && vite build
