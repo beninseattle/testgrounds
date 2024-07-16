@@ -5,6 +5,12 @@ on:
       - main
     paths:
       - dist/**
+  pull_request:
+    branches:
+      - main
+    paths:
+      - dist/**
+  workflow_dispatch:
 jobs:
   sync:
     runs-on: ubuntu-latest
