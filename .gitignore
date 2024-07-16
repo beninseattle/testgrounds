@@ -89,7 +89,7 @@ out
 
 # Nuxt.js build / generate output
 .nuxt
-# dist - using github actions to push these out
+dist
 dist-ssr
 
 # Gatsby files
